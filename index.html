@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Presentación web exportable a PDF del Parcial #1 de Diseño UX/UI ISEC 2026: Equilibria." />
+  <title>Equilibria · Parcial #1 Diseño UX/UI ISEC 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior fija para recorrer la landing y exportar a PDF desde navegador. -->
+  <header class="topbar" aria-label="Navegación principal de la presentación">
+    <a class="brand" href="#portada" aria-label="Ir a portada">
+      <span class="brand-mark">E</span>
+      <span>Equilibria</span>
+    </a>
+    <nav class="nav-pills" aria-label="Secciones">
+      <a href="#producto">Producto</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#persona">Persona</a>
+      <a href="#flujo">Flow</a>
+      <a href="#wireframes">Wireframes</a>
+      <a href="#sistema-visual">Visual</a>
+    </nav>
+    <button class="print-button" type="button" data-print>Exportar PDF</button>
+  </header>
+
+  <main>
+    <!-- 1. PORTADA -->
+    <section id="portada" class="slide hero dark-section">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="slide-inner hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Parcial #1 · Diseño UX/UI</p>
+          <h1>Equilibria</h1>
+          <p class="hero-tagline">Organizá tu día sin desordenar tu vida.</p>
+          <p class="hero-subtitle">App de organización personal para personas multitasking.</p>
+          <div class="hero-meta" aria-label="Datos del proyecto">
+            <span>Valentino Sparano</span>
+            <span>Diseño UX/UI</span>
+            <span>ISEC · 2026</span>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal" aria-label="Vista conceptual de Equilibria">
+          <div class="phone-shell">
+            <div class="phone-top"></div>
+            <div class="phone-content">
+              <div class="status-card teal">
+                <span>Hoy</span>
+                <strong>Carga equilibrada</strong>
+              </div>
+              <div class="mini-chart" aria-hidden="true">
+                <span style="height: 48%"></span>
+                <span style="height: 78%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 42%"></span>
+              </div>
+              <div class="task-row"><i></i><span>Trabajo · 09:00</span></div>
+              <div class="task-row"><i></i><span>Gimnasio · 18:30</span></div>
+              <div class="alert-card">Reorganización sugerida</div>
+            </div>
+          </div>
+          <div class="floating-card card-one">Agenda + bienestar</div>
+          <div class="floating-card card-two">Menos carga mental</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRESENTACIÓN DEL PRODUCTO -->
+    <section id="producto" class="slide light-section">
+      <div class="slide-inner two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> Presentación del producto</p>
+          <h2>Organizar no solo lo que hacemos, sino cómo vivimos.</h2>
+        </div>
+        <div class="content-stack reveal">
+          <p class="lead">Equilibria surge a partir de una problemática cotidiana: muchas personas combinan estudio, trabajo, entrenamiento, vida social, proyectos personales y tareas diarias, pero las herramientas actuales se enfocan principalmente en productividad y no siempre ayudan a cuidar el equilibrio personal.</p>
+          <blockquote>“Hoy organizamos lo que hacemos, pero no cómo vivimos.”</blockquote>
+          <div class="highlight-card">
+            <span class="badge teal-badge">Diferencial</span>
+            <p>Equilibria nace como una app pensada para personas multitasking que necesitan ordenar su rutina sin sumar más carga mental. Su diferencial es combinar organización, análisis de carga y bienestar personal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OBJETIVOS -->
+    <section id="objetivos" class="slide dark-section">
+      <div class="slide-inner">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> Objetivos de la app</p>
+          <h2>Centralizar, priorizar y equilibrar.</h2>
+          <p>Diseñar una experiencia que ayude al usuario a visualizar su carga diaria y recibir recomendaciones orientadas al equilibrio entre productividad y bienestar.</p>
+        </div>
+        <div class="objective-grid reveal">
+          <article class="objective-main card-glow">
+            <span class="number">01</span>
+            <h3>Objetivo general</h3>
+            <p>Diseñar una app de organización personal que permita centralizar tareas, visualizar la carga diaria y recibir recomendaciones orientadas al equilibrio entre productividad y bienestar.</p>
+          </article>
+          <div class="objective-list">
+            <article><span>✓</span>Centralizar tareas, agenda y actividades personales.</article>
+            <article><span>✓</span>Ayudar al usuario a priorizar actividades.</article>
+            <article><span>✓</span>Detectar sobrecarga diaria o semanal.</article>
+            <article><span>✓</span>Sugerir reorganización cuando sea necesario.</article>
+            <article><span>✓</span>Incorporar pausas activas y hábitos de bienestar.</article>
+            <article><span>✓</span>Reducir la carga mental asociada a la organización.</article>
+            <article><span>✓</span>Ofrecer una interfaz simple, intuitiva y responsive.</article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BENCHMARKING -->
+    <section id="benchmarking" class="slide light-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> Benchmarking</p>
+          <h2>Productividad hay. Bienestar, todavía falta.</h2>
+          <p>Notion, Todoist y Google Calendar permiten organizar actividades y recordatorios, pero ninguna se enfoca realmente en el bienestar del usuario multitasking.</p>
+        </div>
+        <div class="benchmark-grid reveal">
+          <article class="benchmark-card notion">
+            <h3>Notion</h3>
+            <ul>
+              <li>Muy completa y versátil.</li>
+              <li>Puede ser compleja al principio.</li>
+              <li>Requiere tiempo de configuración.</li>
+            </ul>
+          </article>
+          <article class="benchmark-card todoist">
+            <h3>Todoist</h3>
+            <ul>
+              <li>Simple y ágil.</li>
+              <li>Buena para listas de tareas.</li>
+              <li>Limitada para análisis de carga y bienestar.</li>
+            </ul>
+          </article>
+          <article class="benchmark-card calendar">
+            <h3>Google Calendar</h3>
+            <ul>
+              <li>Excelente visualización del tiempo.</li>
+              <li>Útil para agenda diaria.</li>
+              <li>Poco profunda para tareas complejas y equilibrio.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="table-wrap reveal" role="region" aria-label="Tabla comparativa de benchmarking" tabindex="0">
+          <table>
+            <thead>
+              <tr><th>App</th><th>Facilidad</th><th>Organización</th><th>Bienestar</th><th>Puntaje</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Notion</td><td>2/5</td><td>5/5</td><td>1/5</td><td><strong>3/5</strong></td></tr>
+              <tr><td>Todoist</td><td>4/5</td><td>3/5</td><td>1/5</td><td><strong>3.5/5</strong></td></tr>
+              <tr><td>Google Calendar</td><td>5/5</td><td>3/5</td><td>1/5</td><td><strong>4/5</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="conclusion reveal">Las aplicaciones actuales ayudan a organizar actividades, pero no abordan de forma integral el bienestar ni el equilibrio del usuario multitasking.</p>
+      </div>
+    </section>
+
+    <!-- 5 y 6. INVESTIGACIÓN -->
+    <section id="investigacion" class="slide dark-section">
+      <div class="slide-inner">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> Investigación de usuarios</p>
+          <h2>Datos para diseñar con intención.</h2>
+        </div>
+
+        <div class="research-layout">
+          <article class="research-card reveal">
+            <div class="research-kicker">Cuantitativa · Encuestas</div>
+            <h3>18 respuestas</h3>
+            <p>Se realizó una encuesta digital orientada a comprender hábitos, necesidades y problemáticas vinculadas a la organización diaria. La consigna pedía 10 encuestas, pero se obtuvieron 18 respuestas, ampliando la muestra.</p>
+            <div class="insight-grid compact">
+              <span>18–22 años predominante</span>
+              <span>Trabajo + estudio</span>
+              <span>Rutinas con hobbies</span>
+              <span>Poco tiempo diario</span>
+            </div>
+          </article>
+
+          <article class="research-card accent reveal">
+            <div class="research-kicker">Cualitativa · Entrevista</div>
+            <h3>Tomás Torres, 30 años</h3>
+            <p>Objetivo: comprender cómo una persona con múltiples responsabilidades organiza su rutina, qué herramientas utiliza, qué frustraciones encuentra y qué necesidades no resueltas podrían orientar el diseño de la app.</p>
+            <a class="button orange" href="https://drive.google.com/file/d/1LhhrQ5EBCQtBERz0TgPLBxIxQDH3LthO/view?usp=drive_link" target="_blank" rel="noreferrer">Ver grabación de entrevista</a>
+          </article>
+        </div>
+
+        <div class="insight-columns reveal">
+          <article>
+            <h4>Puntos principales</h4>
+            <ul>
+              <li>Perfiles que trabajan, estudian o hacen ambas cosas.</li>
+              <li>Rutinas con gimnasio, deporte, hobbies, vida social, música o emprendimientos.</li>
+              <li>Muchos no utilizan apps específicas para organizarse.</li>
+              <li>Herramientas mencionadas: Google Calendar, recordatorios, Notion, ClickUp y agenda física.</li>
+              <li>La app debe ser rápida, simple e intuitiva.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Problemáticas detectadas</h4>
+            <ul>
+              <li>Saturarse de actividades.</li>
+              <li>Olvidarse tareas o no saber priorizar.</li>
+              <li>Falta de tiempo y constancia.</li>
+              <li>Estrés por demasiadas actividades simultáneas.</li>
+              <li>Se posterga descanso, ejercicio, estudio, vida social y tareas personales.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Hallazgos de entrevista</h4>
+            <ul>
+              <li>Trabaja principalmente home office.</li>
+              <li>Combina trabajo, gimnasio, fútbol, banda, videojuegos y series.</li>
+              <li>Usa ClickUp para trabajo y Google Calendar para lo personal.</li>
+              <li>Valora checklists visuales y rechaza notificaciones invasivas.</li>
+              <li>Quiere optimizar mañanas para no terminar tareas de noche.</li>
+            </ul>
+          </article>
+        </div>
+
+        <details class="interview-script reveal">
+          <summary>Ver guion resumido de entrevista</summary>
+          <ol>
+            <li>¿Podrías contarme sobre tu rutina semanal?</li>
+            <li>¿Qué te llevó a buscar formas para organizarte mejor?</li>
+            <li>¿Usás apps para organizar tu rutina?</li>
+            <li>¿Qué te resulta difícil o frustrante?</li>
+            <li>¿Qué características te resultan útiles?</li>
+            <li>¿Qué te motivaría a descargar otra app?</li>
+            <li>¿Qué tendría sí o sí una app ideal?</li>
+            <li>¿Qué tan satisfecho estás con tu organización actual?</li>
+          </ol>
+        </details>
+
+        <p class="conclusion invert reveal">Los usuarios no buscan solamente productividad: buscan recuperar control, reducir estrés y encontrar equilibrio. La entrevista confirma la oportunidad de una app simple, práctica, adaptable y orientada tanto a organización como a bienestar.</p>
+      </div>
+    </section>
+
+    <!-- 7. USER PERSONA -->
+    <section id="persona" class="slide light-section image-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> User Persona</p>
+          <h2>User Persona: Julian Martinez</h2>
+        </div>
+        <div class="asset-layout reveal">
+          <figure class="asset-frame">
+            <img src="assets/01_user_persona_julian_martinez.png" alt="User Persona: Julian Martinez" />
+            <figcaption>Imagen provista: User Persona de Julian Martinez.</figcaption>
+          </figure>
+          <div class="persona-card">
+            <div class="persona-header"><span>JM</span><div><h3>Julian Martinez</h3><p>24 años · Junior Project Manager & Emprendedor</p></div></div>
+            <p>Trabaja en home office, gestiona múltiples proyectos simultáneamente y complementa su semana con entrenamiento, ensayos con su banda y vida social. Busca activamente el equilibrio entre productividad y bienestar. Es multitasking por necesidad, no por elección.</p>
+            <blockquote>“Necesito que mi agenda me ayude a respirar, no que me dé más trabajo del que ya tengo.”</blockquote>
+            <div class="persona-lists">
+              <div><h4>Metas</h4><ul><li>Optimizar las mañanas con rutinas claras.</li><li>Centralizar vida laboral y personal.</li><li>Incorporar pausas activas y hábitos.</li></ul></div>
+              <div><h4>Frustraciones</h4><ul><li>Saturación mental y sobrecarga cognitiva.</li><li>Notificaciones invasivas y spam.</li><li>Apps rígidas sin automatización.</li></ul></div>
+            </div>
+            <div class="chip-row"><span>Nivel digital: Avanzado</span><span>Google Calendar</span><span>ClickUp</span><span>Notas iPhone</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. USER FLOW -->
+    <section id="flujo" class="slide dark-section image-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> User Flow</p>
+          <h2>User Flow de la app</h2>
+          <p>El flujo contempla ingreso, creación de cuenta, onboarding personalizado, llegada a Home, carga de tareas y análisis de sobrecarga.</p>
+        </div>
+        <div class="asset-layout reverse reveal">
+          <figure class="asset-frame dark-frame">
+            <img src="assets/02_user_flow_app_multitasking.svg" alt="User Flow de la app Equilibria" />
+            <figcaption>Imagen provista: User Flow de la app.</figcaption>
+          </figure>
+          <div class="key-list">
+            <h3>Puntos clave</h3>
+            <ul>
+              <li>El usuario puede iniciar sesión o crear cuenta.</li>
+              <li>Si crea cuenta, completa objetivos, actividades y prioridades.</li>
+              <li>Luego llega a Home / Vista de hoy.</li>
+              <li>Puede agregar tareas y la app analiza la carga.</li>
+              <li>Si hay sobrecarga, sugiere reorganizar; si no, confirma la tarea.</li>
+              <li>La navegación principal incluye Hoy/Agenda, Equilibrio y Perfil/Configuración.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. MAPA DE SITIO -->
+    <section id="mapa" class="slide light-section image-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> Mapa de sitio</p>
+          <h2>Mapa de sitio</h2>
+          <p>El mapa organiza la app en dos grandes instancias: Inicio / Acceso y Navegación interna.</p>
+        </div>
+        <figure class="asset-frame full-width reveal">
+          <img src="assets/03_mapa_sitio.svg" alt="Mapa de sitio de Equilibria" />
+          <figcaption>Agregar tarea aparece como acción dentro de Home y Hoy/Agenda. Ambas entradas llevan a una pantalla compartida desde donde se inicia el análisis de carga y la posible reorganización sugerida.</figcaption>
+        </figure>
+        <div class="site-map-summary reveal">
+          <article><h3>Inicio / Acceso</h3><p>Inicio, crear cuenta, formulario de registro, onboarding, objetivos, actividades, prioridades, iniciar sesión y recuperar contraseña.</p></article>
+          <article><h3>Navegación interna</h3><p>Home / Vista de hoy, Hoy / Agenda, Equilibrio, Perfil / Configuración y flujo Agregar tarea.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. ARQUITECTURA DE LA INFORMACIÓN -->
+    <section id="arquitectura" class="slide dark-section image-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Arquitectura de la información</p>
+          <h2>Contenido organizado por momentos de uso.</h2>
+          <p>La arquitectura se pensó para reducir la carga cognitiva con etiquetas claras, prioridad de información y navegación simple.</p>
+        </div>
+        <figure class="asset-frame dark-frame full-width reveal">
+          <img src="assets/04_arquitectura_informacion.svg" alt="Arquitectura de la información de Equilibria" />
+          <figcaption>Organización del contenido, navegación, etiquetado, jerarquía y prioridad de la información.</figcaption>
+        </figure>
+        <div class="ia-grid reveal">
+          <span>Acceso</span><span>Personalización inicial</span><span>Home / Vista de hoy</span><span>Hoy / Agenda</span><span>Flujo Agregar tarea</span><span>Equilibrio</span><span>Perfil / Configuración</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. WIREFRAMES -->
+    <section id="wireframes" class="slide light-section">
+      <div class="slide-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> Wireframes en baja fidelidad</p>
+          <h2>Estructura antes del detalle visual.</h2>
+          <p>Los wireframes fueron desarrollados en baja fidelidad para definir la estructura general de las pantallas, la disposición de los elementos y la adaptación responsive antes de avanzar hacia decisiones visuales más detalladas.</p>
+          <a class="button" href="https://www.figma.com/design/hzZhraxGTvgvihSHusVfDH/APP-MULTITASKING?node-id=37-9138&t=OlXzpao71iRNeI5y-1" target="_blank" rel="noreferrer">Ver wireframes en Figma</a>
+        </div>
+        <div class="wireframe-showcase reveal" aria-label="Composición de wireframes low-fi">
+          <div class="desktop-wireframe">
+            <div class="wf-sidebar"><span></span><span></span><span></span><span></span></div>
+            <div class="wf-main">
+              <div class="wf-topline"></div>
+              <div class="wf-columns"><span></span><span></span><span></span></div>
+              <div class="wf-card-wide"></div>
+              <div class="wf-list"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="mobile-wireframes">
+            <div class="mobile-wf"><span></span><i></i><i></i><b></b></div>
+            <div class="mobile-wf alt"><span></span><i></i><i></i><b></b></div>
+            <div class="mobile-wf warn"><span></span><i></i><i></i><b></b></div>
+          </div>
+        </div>
+        <div class="screen-tags reveal">
+          <span>Inicio</span><span>Iniciar sesión</span><span>Crear cuenta</span><span>Recuperar contraseña</span><span>Onboarding 1: Objetivos</span><span>Onboarding 2: Actividades</span><span>Onboarding 3: Prioridades</span><span>Home / Vista de hoy</span><span>Agregar tarea</span><span>Análisis de carga</span><span>Reorganización sugerida</span><span>Hoy / Agenda</span><span>Equilibrio</span><span>Perfil / Configuración</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. SISTEMA VISUAL -->
+    <section id="sistema-visual" class="slide dark-section">
+      <div class="slide-inner">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span> Sistema visual / Estética propuesta</p>
+          <h2>Minimalista, funcional y cálida.</h2>
+          <p>Equilibria debe transmitir organización, calma, foco y bienestar.</p>
+        </div>
+        <div class="visual-system reveal">
+          <div class="palette">
+            <span style="--swatch:#159B95">Principal</span>
+            <span style="--swatch:#6D47E8">Equilibrio</span>
+            <span style="--swatch:#F46A14">Alerta</span>
+            <span style="--swatch:#F7F8FA">Fondo</span>
+            <span style="--swatch:#FFFFFF">Cards</span>
+            <span style="--swatch:#1F2933">Texto</span>
+            <span style="--swatch:#6B7280">Secundario</span>
+            <span style="--swatch:#E5E7EB">Bordes</span>
+          </div>
+          <article class="heuristics-card">
+            <h3>Criterios de usabilidad inspirados en Jakob Nielsen</h3>
+            <ul>
+              <li><strong>Visibilidad:</strong> mostrar estado del día y carga.</li>
+              <li><strong>Mundo real:</strong> usar términos simples como tareas, agenda y descanso.</li>
+              <li><strong>Control:</strong> permitir aceptar, editar o ignorar sugerencias.</li>
+              <li><strong>Consistencia:</strong> mantener navegación y componentes estables.</li>
+              <li><strong>Prevención:</strong> advertir sobre sobrecarga antes de confirmar.</li>
+              <li><strong>Minimalismo:</strong> evitar saturación visual.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. CONCLUSIÓN -->
+    <section id="conclusion" class="slide light-section">
+      <div class="slide-inner conclusion-layout reveal">
+        <p class="eyebrow dark"><span></span> Conclusión</p>
+        <h2>Una app simple, intuitiva y humana.</h2>
+        <p>Equilibria responde a una problemática real detectada en la investigación: las personas multitasking no solo necesitan organizar tareas, sino también cuidar su equilibrio personal. A partir del benchmarking, las encuestas y la entrevista, se identificó una oportunidad clara para diseñar una app capaz de centralizar actividades, detectar sobrecarga y acompañar al usuario en una mejor distribución de su rutina.</p>
+      </div>
+    </section>
+
+    <!-- 14. CIERRE -->
+    <section id="cierre" class="slide hero closing dark-section">
+      <div class="ambient ambient-one"></div>
+      <div class="slide-inner centered reveal">
+        <p class="eyebrow"><span></span> Cierre</p>
+        <h2>Equilibria</h2>
+        <p class="hero-tagline">Organizá tu día sin desordenar tu vida.</p>
+        <div class="hero-meta centered-meta">
+          <span>Valentino Sparano</span>
+          <span>Diseño UX/UI · ISEC 2026</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
